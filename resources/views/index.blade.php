@@ -1,7 +1,10 @@
 @extends('layouts.master')
 
 @section('content')
+
+<h2 class="text-center bg-dark p-4 text-white">Image Upload witout submit button using AJAX</h2>
 <div class="container">
+
     <form class="form-signin text-center" id="user_save_profile_form" method="POST" enctype="multipart/form-data">
         @csrf
 
@@ -28,7 +31,6 @@
 
 
 <script>
-    
     function doAfterSelectImage(input) {
         readURL(input);
         uploadUserProfileImage();
